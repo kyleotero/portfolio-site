@@ -1,0 +1,300 @@
+/*makes scrollbar invisible*/
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  body {
+    scroll-snap-type: y mandatory;
+  }
+  
+  @font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Thin.ttf);
+  }
+  
+  p {
+    font-family: roboto;
+  }
+  
+  html,
+  body {
+    background-color: #1a1a1d;
+    margin: 0%;
+  }
+  
+  #welcome {
+    font-size: 100px;
+    animation-name: welcomemove;
+    animation-duration: 1s;
+  }
+  
+  .center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  
+  .nametextcenter {
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  
+  .desctextcenter {
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    top: 50%;
+  }
+  
+  .lower {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -15%);
+  }
+  
+  #scrollmessage {
+    animation-name: scrollmsgopac;
+    animation-duration: 3s;
+  }
+  
+  @keyframes welcomemove {
+    0% {
+      transform: translate(0%, -1500%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes scrollmsgopac {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes imgmove {
+    0% {
+      transform: translate(0%, -100%);
+      opacity: 0%;
+    }
+    60% {
+      transform: translate(0%, -100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  #downarrows {
+    width: 20%;
+    height: auto;
+    animation-name: imgmove;
+    animation-duration: 1.75s;
+  }
+  
+  #first {
+    color: white;
+    text-align: center;
+    height: 100vh-100px;
+    width: 100vh;
+    scroll-snap-align: start;
+  }
+  
+  #second {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 100vh;
+    scroll-snap-align: start;
+  }
+  
+  #third {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 200vh;
+    scroll-snap-align: start;
+  }
+  
+  #fourth {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 300vh;
+    scroll-snap-align: start;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+  
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal.nametextanim, .reveal.desctextanim, .reveal.frameanim, .reveal.langanim {
+    opacity: 1;
+  }
+
+  .nametextanim {
+    animation-name: nametextmove;
+    animation-duration: 3s;
+  }
+  
+  .desctextanim {
+    animation-name: desctextmove;
+    animation-duration: 3s;
+  }
+  
+  @keyframes nametextmove {
+    0% {
+      transform: translate(0%, 200%);
+      opacity: 0%;
+    }
+    40% {
+      transform: translate(0%, 100%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes desctextmove {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      transform: translate(0%, -20%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  h2 {
+    font-family: roboto;
+  }
+  
+  #languages {
+    transform: translate(-200%, -29%);
+    text-align: left;
+  }
+  
+  h2.langanim {
+    animation-name: h2langtransfer;
+    animation-duration: 3s;
+  }
+  
+  h2.frameanim {
+    animation-name: h2frametransfer;
+    animation-duration: 3s;
+  }
+  
+  ul.langanim {
+    transform: translate(-33%);
+  }
+  
+  ul.langanim > li {
+    animation-name: languagetransfer;
+    animation-duration: 3s;
+    font-family: roboto;
+    list-style: none;
+    width: 100%;
+    transition: width .8s ease;
+    text-align: left;
+  }
+  
+  ul.frameanim > li {
+    animation-name: frameworktransfer;
+    animation-duration: 3s;
+    font-family: roboto;
+    list-style: none;
+    width: 100%;
+    transition: width .8s ease;
+    text-align: right;
+  }
+  
+  #frameworks {
+    text-align: right;
+    transform: translate(88%, -50%);
+  }
+  
+  @keyframes languagetransfer {
+    0% {
+      text-align: center;
+      transform: translateX(263%);
+    }
+    30% {
+      text-align: center;
+      transform: translateX(263%);
+      width: 100%;
+    }
+    60% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes h2langtransfer {
+    0% {
+      transform: translate(160%);
+    }
+    30% {
+      transform: translate(160%);
+    }
+  }
+  
+  @keyframes h2frametransfer {
+    0% {
+      transform: translate(-160%);
+      opacity: 0%;
+    }
+    30% {
+      transform: translate(-160%);
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes frameworktransfer {
+    0% {
+      /* comment out until more frameworks added
+      text-align: center;*/
+      transform: translateX(-250%);
+      opacity: 0%;
+    }
+    30% {
+      transform: translateX(-250%);
+      opacity: 0%;
+    }
+    /* comment out until more frameworks added
+    50% {
+      
+    }*/
+  }
