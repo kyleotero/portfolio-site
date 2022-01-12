@@ -298,3 +298,15 @@
       
     }*/
   }
+
+  .project {
+    margin: 1%;
+    width: 30%;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    float: left;
+  }
+
+  #projects-wrapper {
+    width: 75%;
+  }
