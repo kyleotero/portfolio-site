@@ -14,6 +14,11 @@ function reveal() {
             reveals[i+2].classList.add("frameanim");
             reveals[i+3].classList.add("frameanim");
         }
+        if(reveals[i].id === 'port') {
+          reveals[i].classList.add("projectsanim");
+          reveals[i+1].classList.add("projectsanim");
+          reveals[i+2].classList.add("projectsanim");
+        }
       }
     }
   }
@@ -33,4 +38,9 @@ function scrollsecond() {
 function scrollthird() {
     var element = document.getElementById("fourth");
     element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}
+
+function scrollfourth() {
+  var element = document.getElementById("fifth");
+  element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }

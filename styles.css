@@ -148,6 +148,16 @@
     scroll-snap-align: start;
   }
 
+  #fifth {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 400vh;
+    scroll-snap-align: start;
+  }
+
   #name {
     font-size: 40px;
   }
@@ -156,7 +166,7 @@
     opacity: 0;
   }
 
-  .reveal.nametextanim, .reveal.desctextanim, .reveal.frameanim, .reveal.langanim {
+  .reveal.nametextanim, .reveal.desctextanim, .reveal.frameanim, .reveal.langanim, .reveal.projectsanim{
     opacity: 1;
   }
 
@@ -300,7 +310,7 @@
   }
 
   .project {
-    margin: 1%;
+    margin: 1.5%;
     width: 30%;
     border: 1.5px solid white;
     border-radius: 10px;
@@ -309,4 +319,20 @@
 
   #projects-wrapper {
     width: 75%;
+  }
+
+  @keyframes projectsopen {
+    0% {
+      opacity: 0%;
+      transform: translate(0%, -50%);
+    } 
+    100% {
+      opacity: 100%;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  .projectsanim {
+    animation-name: projectsopen;
+    animation-duration: 2s;
   }
