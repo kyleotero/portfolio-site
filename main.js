@@ -112,6 +112,15 @@ function time() {
   document.getElementById("calendar").innerText =
     days[day] + ", " + months[month] + " " + dates;
 
+  var age = date.getFullYear() - 2003;
+
+  if (date.getMonth() < 10) {
+    age -= 1;
+  }
+
+  document.getElementById("desc").innerText =
+    "i am an " + age + " year old student studying at york university.";
+  //i am an 18 year old student studying at york university.
   setTimeout(time, 1000);
 }
 
