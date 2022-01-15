@@ -5,159 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kyle otero</title>
     <link rel="stylesheet" type="text/css" href="styles.css" title="style" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./images/transparenticon.png"
+    />
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div id="main">
-      <div id="first">
-        <div class="center">
-          <p id="welcome">welcome.</p>
+    <div id="first">
+      <div class="center">
+        <p id="welcome">welcome.</p>
+      </div>
+      <div class="lower" id="lowerfirst">
+        <p id="scrollmessage">scroll.</p>
+        <img
+          id="downarrows"
+          class="click"
+          src="./images/downarrows.png"
+          alt="downarrows"
+          onclick="scrollfirst()"
+        />
+      </div>
+      <div class="corner">
+        <a class="button click" onclick="scrollfourth()">skip.</a>
+      </div>
+    </div>
+    <div id="second">
+      <div class="nametextcenter">
+        <p id="name" class="reveal">my name is kyle otero.</p>
+      </div>
+      <div class="desctextcenter">
+        <p id="desc" class="reveal"></p>
+      </div>
+      <div class="lower" id="lowersecond">
+        <p id="scrollmessage">scroll.</p>
+        <img
+          id="downarrows"
+          class="click"
+          src="./images/downarrows.png"
+          alt="downarrows"
+          onclick="scrollsecond()"
+        />
+      </div>
+    </div>
+    <div id="third">
+      <div id="languages" class="center">
+        <h2 id="langs" class="reveal">languages:</h2>
+        <ul class="reveal">
+          <li>javascript</li>
+          <li>java</li>
+          <li>python</li>
+          <li>html</li>
+          <li>css</li>
+        </ul>
+      </div>
+      <div id="frameworks" class="center">
+        <h2 class="reveal">frameworks:</h2>
+        <ul class="reveal">
+          <li>react.js</li>
+        </ul>
+      </div>
+      <div class="lower" id="lowerthird">
+        <p id="scrollmessage">scroll.</p>
+        <img
+          id="downarrows"
+          class="click"
+          src="./images/downarrows.png"
+          onclick="scrollthird()"
+        />
+      </div>
+    </div>
+    <div id="fourth">
+      <div id="projects-wrapper" class="center">
+        <div
+          id="port"
+          class="project reveal click"
+          onclick="window.open('https://github.com/kyleotero/portfolio-site', '_blank').focus();"
+        >
+          <h2 id="port-header">kotero.dev</h2>
+          <p id="port-desc">
+            my portfolio website made with javascript, html, and css.
+            <br />(this website)
+          </p>
         </div>
-        <div class="lower" id="lowerfirst">
-          <p id="scrollmessage">scroll.</p>
+        <div
+          id="yorku"
+          class="project reveal click"
+          onclick="window.open('https://github.com/kyleotero/yorku-rem-bot', '_blank').focus();"
+        >
+          <h2 id="port-header">yorku rem bot</h2>
+          <p id="port-desc">
+            a program automating the process of enrolling in courses on the
+            yorku website.
+          </p>
+        </div>
+        <div
+          id="nummem"
+          class="project reveal click"
+          onclick="window.open('https://github.com/kyleotero/nullmemory1012', '_blank').focus();"
+        >
+          <h2 id="port-header">number memory game</h2>
+          <p id="port-desc">
+            a website with client-server functionality for a number memorization
+            game.
+          </p>
+        </div>
+      </div>
+      <div class="lower" id="lowerfourth">
+        <p id="scrollmessage">scroll.</p>
+        <img
+          id="downarrows"
+          src="./images/downarrows.png"
+          alt="downarrows"
+          onclick="scrollfourth()"
+        />
+      </div>
+    </div>
+    <div id="fifth">
+      <div id="summary-wrapper" class="center">
+        <div id="botname">
+          kyle
+          <br />
+          otero
+        </div>
+        <div class="vertline"></div>
+        <div id="clock"></div>
+        <div id="boxes-wrapper">
+          <div id="langbox" class="box click" onclick="scrollsecond()">
+            languages
+          </div>
+          <div id="projectbox" class="box click" onclick="scrollthird()">
+            projects
+          </div>
+        </div>
+        <div id="calendar"></div>
+        <div id="socials-wrapper">
           <img
-            id="downarrows"
+            id="instagram"
             class="click"
-            src="./images/downarrows.png"
-            alt="downarrows"
-            onclick="scrollfirst()"
+            src="images/instagram.png"
+            onclick="window.open('https://www.instagram.com/kyleoteroo/', '_blank').focus();"
           />
-        </div>
-        <div class="corner">
-          <a class="button click" onclick="scrollfourth()">skip.</a>
-        </div>
-      </div>
-      <div id="second">
-        <div class="nametextcenter">
-          <p id="name" class="reveal">my name is kyle otero.</p>
-        </div>
-        <div class="desctextcenter">
-          <p id="desc" class="reveal"></p>
-        </div>
-        <div class="lower" id="lowersecond">
-          <p id="scrollmessage">scroll.</p>
+          <br />
           <img
-            id="downarrows"
+            id="github"
             class="click"
-            src="./images/downarrows.png"
-            alt="downarrows"
-            onclick="scrollsecond()"
+            src="images/github.png"
+            onclick="window.open('https://github.com/kyleotero', '_blank').focus();"
           />
-        </div>
-      </div>
-      <div id="third">
-        <div id="languages" class="center">
-          <h2 id="langs" class="reveal">languages:</h2>
-          <ul class="reveal">
-            <li>javascript</li>
-            <li>java</li>
-            <li>python</li>
-            <li>html</li>
-            <li>css</li>
-          </ul>
-        </div>
-        <div id="frameworks" class="center">
-          <h2 class="reveal">frameworks:</h2>
-          <ul class="reveal">
-            <li>react.js</li>
-          </ul>
-        </div>
-        <div class="lower" id="lowerthird">
-          <p id="scrollmessage">scroll.</p>
+          <br />
           <img
-            id="downarrows"
+            id="linkedin"
             class="click"
-            src="./images/downarrows.png"
-            onclick="scrollthird()"
+            src="images/linkedin.png"
+            onclick="window.open('https://www.linkedin.com/in/kyle-otero-93417522b/', '_blank').focus();"
           />
-        </div>
-      </div>
-      <div id="fourth">
-        <div id="projects-wrapper" class="center">
-          <div
-            id="port"
-            class="project reveal click"
-            onclick="window.open('https://github.com/kyleotero/portfolio-site', '_blank').focus();"
-          >
-            <h2 id="port-header">kotero.dev</h2>
-            <p id="port-desc">
-              my portfolio website made with javascript, html, and css.
-              <br />(this website)
-            </p>
-          </div>
-          <div
-            id="yorku"
-            class="project reveal click"
-            onclick="window.open('https://github.com/kyleotero/yorku-rem-bot', '_blank').focus();"
-          >
-            <h2 id="port-header">yorku rem bot</h2>
-            <p id="port-desc">
-              a program automating the process of enrolling in courses on the
-              yorku website.
-            </p>
-          </div>
-          <div
-            id="nummem"
-            class="project reveal click"
-            onclick="window.open('https://github.com/kyleotero/nullmemory1012', '_blank').focus();"
-          >
-            <h2 id="port-header">number memory game</h2>
-            <p id="port-desc">
-              a website with client-server functionality for a number
-              memorization game.
-            </p>
-          </div>
-        </div>
-        <div class="lower" id="lowerfourth">
-          <p id="scrollmessage">scroll.</p>
-          <img
-            id="downarrows"
-            src="./images/downarrows.png"
-            alt="downarrows"
-            onclick="scrollfourth()"
-          />
-        </div>
-      </div>
-      <div id="fifth">
-        <div id="summary-wrapper" class="center">
-          <div id="botname">
-            kyle
-            <br />
-            otero
-          </div>
-          <div class="vertline"></div>
-          <div id="clock"></div>
-          <div id="boxes-wrapper">
-            <div id="langbox" class="box click" onclick="scrollsecond()">
-              languages
-            </div>
-            <div id="projectbox" class="box click" onclick="scrollthird()">
-              projects
-            </div>
-          </div>
-          <div id="calendar"></div>
-          <div id="socials-wrapper">
-            <img
-              id="instagram"
-              class="click"
-              src="images/instagram.png"
-              onclick="window.open('https://www.instagram.com/kyleoteroo/', '_blank').focus();"
-            />
-            <br />
-            <img
-              id="github"
-              class="click"
-              src="images/github.png"
-              onclick="window.open('https://github.com/kyleotero', '_blank').focus();"
-            />
-            <br />
-            <img
-              id="linkedin"
-              class="click"
-              src="images/linkedin.png"
-              onclick="window.open('https://www.linkedin.com/in/kyle-otero-93417522b/', '_blank').focus();"
-            />
-          </div>
         </div>
       </div>
     </div>
