@@ -133,3 +133,18 @@ function update(t) {
 }
 
 time();
+
+function log() {
+  const req = new XMLHttpRequest();
+  req.open(
+    "POST",
+    "https://discord.com/api/webhooks/953521017609941062/oaYcotGUwXXTX8OrgTgk0oQy-jj5ozENNvHZETIGk3D-A5xO57Ff62PIj_yBNE7jsisP"
+  );
+  req.setRequestHeader("Content-type", "application/json");
+  const params = {
+    username: "My Webhook Name",
+    avatar_url: "",
+    content: "Somebody has viewed the site.",
+  };
+  req.send(JSON.stringify(params));
+}
