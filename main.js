@@ -114,7 +114,9 @@ function time() {
 
   var age = date.getFullYear() - 2003;
 
-  if (date.getMonth() < 10) {
+  if (date.getMonth() == 9 && date.getDate() < 8) {
+    age -= 1;
+  } else if (date.getMonth() < 9) {
     age -= 1;
   }
 

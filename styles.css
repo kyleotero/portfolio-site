@@ -307,8 +307,8 @@ ul.frameanim > li {
 }
 
 .project {
-  margin: 1.5%;
-  padding: 1%;
+  margin: 1vw;
+  padding: 0.5vw;
   width: 28%;
   border: 1.5px solid white;
   border-radius: 10px;
