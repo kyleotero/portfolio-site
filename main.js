@@ -123,9 +123,13 @@ function time() {
     age -= 1;
   }
 
+  var an = "an "
+  if (age > 18) {
+    an = "a "
+  }
+
   document.getElementById("desc").innerText =
-    "i am an " + age + " year old student studying at york university.";
-  //i am an 18 year old student studying at york university.
+    "i am " + an + age + " year old student studying at york university.";
   setTimeout(time, 1000);
 }
 
