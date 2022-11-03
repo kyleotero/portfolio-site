@@ -1,7 +1,26 @@
-/*makes scrollbar invisible*/
+/* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+  height: 6px;
+  margin: 3px;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  margin: 3px;
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+
 
 body {
   scroll-snap-type: y mandatory;
@@ -56,6 +75,11 @@ body {
 }
 
 #scrollmessage {
+  animation-name: scrollmsgopac;
+  animation-duration: 3s;
+}
+
+.test {
   animation-name: scrollmsgopac;
   animation-duration: 3s;
 }
@@ -248,7 +272,7 @@ ul.frameanim > li {
 
 #frameworks {
   text-align: right;
-  transform: translate(88%, -50%);
+  transform: translate(100%, -30%);
 }
 
 @keyframes languagetransfer {
@@ -291,8 +315,7 @@ ul.frameanim > li {
 
 @keyframes frameworktransfer {
   0% {
-    /* comment out until more frameworks added
-      text-align: center;*/
+    text-align: center;
     transform: translateX(-250%);
     opacity: 0%;
   }
@@ -300,23 +323,25 @@ ul.frameanim > li {
     transform: translateX(-250%);
     opacity: 0%;
   }
-  /* comment out until more frameworks added
     50% {
       
-    }*/
+    }
 }
 
 .project {
   margin: 1vw;
   padding: 0.5vw;
-  width: 28%;
+  width: 27%;
   border: 1.5px solid white;
   border-radius: 10px;
-  float: left;
 }
 
 #projects-wrapper {
+  height: auto;
   width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @keyframes projectsopen {
@@ -453,7 +478,7 @@ a {
 
   #frameworks {
     text-align: right;
-    transform: translate(20%, -50%);
+    transform: translate(20%, -31%);
   }
 
   @keyframes languagetransfer {
@@ -508,9 +533,20 @@ a {
   .project {
     margin: 3%;
     padding: 1%;
-    width: 90%;
+    width: auto;
     border: 1.5px solid white;
     border-radius: 10px;
+  }
+
+  #projects-wrapper {
+    border: 1.5px solid white;
+    border-radius: 8px;
+    height: 70%;
+    overflow: scroll;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   #botname {

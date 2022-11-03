@@ -19,10 +19,13 @@ function reveal() {
         reveals[i + 2].classList.add("frameanim");
         reveals[i + 3].classList.add("frameanim");
       }
-      if (reveals[i].id === "port") {
+      if (reveals[i].id === "asl") {
         reveals[i].classList.add("projectsanim");
         reveals[i + 1].classList.add("projectsanim");
         reveals[i + 2].classList.add("projectsanim");
+        reveals[i + 3].classList.add("projectsanim");
+        reveals[i + 4].classList.add("projectsanim");
+        reveals[i + 5].classList.add("projectsanim");
       }
     }
   }
