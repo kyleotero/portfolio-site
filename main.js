@@ -1,6 +1,3 @@
-var ipapi = config.ipapi;
-var webhook = config.webhook;
-
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -145,23 +142,3 @@ function update(t) {
 }
 
 time();
-
-function log() {
-  $.getJSON(ipapi, function (data) {
-    var newdata = JSON.stringify(data);
-    newdata = newdata.split(",");
-    var out = "";
-    for (var i = 0; i < newdata.length; i++) {
-      out += newdata[i] + "\n";
-    }
-    const request = new XMLHttpRequest();
-    request.open("POST", webhook);
-    request.setRequestHeader("Content-type", "application/json");
-    const params = {
-      username: "My Webhook Name",
-      avatar_url: "",
-      content: out,
-    };
-    request.send(JSON.stringify(params));
-  });
-}
