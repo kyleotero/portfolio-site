@@ -1,206 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="portfolio site for kyle otero.">
-    <title>kyle otero</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" title="style" />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="./images/transparenticon.png"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="main.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div id="first">
-      <div class="center">
-        <p id="welcome">welcome.</p>
+  <body class="main">
+    <div class="container">
+      <header>
+        <h1>kyle otero</h1>
+      </header>
+
+      <div>
+        <p>software engineer</p>
+        <p>
+          former @ <span id="doordash">doordash</span>,
+          <span id="datadog">datadog</span>, <span id="dropbox">dropbox</span>
+        </p>
       </div>
-      <div class="lower" id="lowerfirst">
-        <p id="scrollmessage">scroll.</p>
-        <img
-          id="downarrows"
-          class="click"
-          src="./images/downarrows.png"
-          alt="downarrows"
-          onclick="scrollfirst()"
-        />
-      </div>
-      <div class="corner">
-        <a class="button click" onclick="scrollfourth()">skip.</a>
-      </div>
-    </div>
-    <div id="second">
-      <div class="nametextcenter">
-        <p id="name" class="reveal">my name is kyle otero.</p>
-      </div>
-      <div class="desctextcenter">
-        <p id="desc" class="reveal"></p>
-      </div>
-      <div class="lower" id="lowersecond">
-        <p id="scrollmessage">scroll.</p>
-        <img
-          id="downarrows"
-          class="click"
-          src="./images/downarrows.png"
-          alt="downarrows"
-          onclick="scrollsecond()"
-        />
-      </div>
-    </div>
-    <div id="third">
-      <div id="languages" class="center">
-        <h2 id="langs" class="reveal">languages:</h2>
-        <ul class="reveal">
-          <li>python</li>
-          <li>javascript</li>
-          <li>typescript</li>
-          <li>java</li>
-          <li>C</li>
-          <li>html</li>
-          <li>css</li>
-        </ul>
-      </div>
-      <div id="frameworks" class="center">
-        <h2 class="reveal">other tools:</h2>
-        <ul class="reveal">
-          <li>react.js</li>
-          <li>tailwindcss</li>
-          <li>selenium</li>
-          <li>puppeteer</li>
-          <li>express</li>
-          <li>flask</li>
-        </ul>
-      </div>
-      <div class="lower" id="lowerthird">
-        <p id="scrollmessage">scroll.</p>
-        <img
-          id="downarrows"
-          class="click"
-          src="./images/downarrows.png"
-          onclick="scrollthird()"
-        />
-      </div>
-    </div>
-    <div id="fourth">
-      <div id="projects-wrapper" class="center">
-        <div
-          id="asl"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/ASL-Translator-HTV', '_blank').focus();"
-        >
-          <h2 id="port-header">asl translator</h2>
-          <p id="port-desc">
-            a website that translates english to american sign language.
-          </p>
-        </div>
-        <div
-          id="java"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/java-to-pseudo', '_blank').focus();"
-        >
-          <h2 id="port-header">java to pseudocode</h2>
-          <p id="port-desc">
-            a website that converts java code into a type of pseudocode.
-          </p>
-        </div>
-        <div
-          id="monitor"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/portfolio-site', '_blank').focus();"
-        >
-          <h2 id="port-header">canada computers monitor</h2>
-          <p id="port-desc">
-            a python scraper that retrieves new products as they are uploaded on
-            the canada computers site.
-          </p>
-        </div>
-        <div
-          id="port"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/portfolio-site', '_blank').focus();"
-        >
-          <h2 id="port-header">kotero.dev</h2>
-          <p id="port-desc">
-            my portfolio website made with javascript, html, and css.
-          </p>
-        </div>
-        <div
-          id="yorku"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/yorku-rem-bot', '_blank').focus();"
-        >
-          <h2 id="port-header">yorku rem bot</h2>
-          <p id="port-desc">
-            a program automating the process of enrolling in courses on the
-            yorku website.
-          </p>
-        </div>
-        <div
-          id="nummem"
-          class="project reveal click"
-          onclick="window.open('https://github.com/kyleotero/nullmemory1012', '_blank').focus();"
-        >
-          <h2 id="port-header">number memory game</h2>
-          <p id="port-desc">
-            a website with client-server functionality for a number memorization
-            game.
-          </p>
-        </div>
-      </div>
-      <div class="lower" id="lowerfourth">
-        <p id="scrollmessage">scroll.</p>
-        <img
-          id="downarrows"
-          src="./images/downarrows.png"
-          alt="downarrows"
-          onclick="scrollfourth()"
-        />
-      </div>
-    </div>
-    <div id="fifth">
-      <div id="summary-wrapper" class="center">
-        <div id="botname">
-          kyle
-          <br />
-          otero
-        </div>
-        <div class="vertline"></div>
-        <div id="clock"></div>
-        <div id="boxes-wrapper">
-          <div id="langbox" class="box click" onclick="scrollsecond()">
-            languages
-          </div>
-          <div id="projectbox" class="box click" onclick="scrollthird()">
-            projects
-          </div>
-        </div>
-        <div id="calendar"></div>
-        <div id="socials-wrapper">
-          <img
-            id="instagram"
-            class="click"
-            src="images/instagram.png"
-            onclick="window.open('https://www.instagram.com/kyleoteroo/', '_blank').focus();"
-          />
-          <br />
-          <img
-            id="github"
-            class="click"
-            src="images/github.png"
-            onclick="window.open('https://github.com/kyleotero', '_blank').focus();"
-          />
-          <br />
-          <img
-            id="linkedin"
-            class="click"
-            src="images/linkedin.png"
-            onclick="window.open('https://www.linkedin.com/in/kyle-otero-93417522b/', '_blank').focus();"
-          />
-        </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/kotero/">linkedin</a>
+        <a href="https://docsend.com/view/wra6qd36wma6zack">resume</a>
       </div>
     </div>
   </body>
