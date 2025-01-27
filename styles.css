@@ -1,43 +1,17 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@theme {
+  --font-sans: "font", sans-serif;
+}
+
 @font-face {
-    font-family: 'garet';
-    src: url('fonts/Garet-Book.woff') format('woff')
-}  
-
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vmin;
-    font-family: garet;
-    font-size: 120%;
-    margin: 0;
-    overflow: hidden;
+  font-family: "garet";
+  src: url("/fonts/Garet-Book.woff") format("woff");
 }
 
-.container {
-    text-align: center;
-}
-
-a {
-    text-decoration: underline;
-    text-decoration-color: black;
-    color: black;
-}
-
-a:hover {
-    color: red;
-    text-decoration-color: red;
-
-}
-
-#doordash:hover {
-    color: #ff3008;
-}
-
-#datadog:hover {
-    color: #632ba6;
-}
-
-#dropbox:hover {
-    color: #0061fe;
+@font-face {
+  font-family: "romantic";
+  src: url("/fonts/romantic.ttf") format("ttf");
 }
