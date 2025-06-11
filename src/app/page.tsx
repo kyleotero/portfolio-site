@@ -8,7 +8,7 @@ export default function Home() {
 
         <div>
           <p className="mt-2 text-lg sm:text-xl lg:text-2xl">software engineer</p>
-          <p className="mt-2 text-sm sm:text-base lg:text-lg>studying cs (and a bit of psych) @ wilfrid laurier university</p>
+          <p className="mt-2 text-sm sm:text-base lg:text-lg">studying cs (and a bit of psych) @ wilfrid laurier university</p>
           <p className="mt-2 text-sm sm:text-base lg:text-lg">
             former @
             <span className="hover:text-[#ff3008] mx-1">doordash</span>,
