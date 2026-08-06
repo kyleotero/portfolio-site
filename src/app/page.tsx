@@ -11,8 +11,8 @@ export default function Home() {
           <p className="mt-2 text-sm sm:text-base lg:text-lg">studied cs (and a bit of psych) @ wilfrid laurier university</p>
           <p className="mt-2 text-sm sm:text-base lg:text-lg">
             interned @
-            <span className="hover:text-[#ff3008] mx-1">doordash</span>,
             <span className="hover:text-[#632ba6] mx-1">datadog</span>,
+            <span className="hover:text-[#ff3008] mx-1">doordash</span>,
             <span className="hover:text-[#0061fe] mx-1">dropbox</span>
           </p>
         </div>
